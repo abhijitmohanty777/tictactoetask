@@ -21,7 +21,6 @@ public class TictactoegameApplication {
 		return (args) -> {
 
             //save a couple of players
-			
             playerRepository.save(new Player("abhi", "abhi@abhi.com", new BCryptPasswordEncoder().encode("abhi")));
             playerRepository.save(new Player("jit", "jit@jit.com",  new BCryptPasswordEncoder().encode("jit")));
             
